@@ -1,6 +1,6 @@
 // 动态心跳，更改自己的名称
 window.onload = function () {
-    document.querySelectorAll('.copyright')[0].innerHTML = '<div>©2022 <i class="fa-fw fas fa-heartbeat card-announcement-animation cc_pointer"></i> By 麻雀 </div> <div>本网站由<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral"> <img class="cdn" src="./img/youpaiyun.png" /></a>提供CDN加速/云储存服务<div>'
+    document.querySelectorAll('.copyright')[0].innerHTML = '<div>©2022 <i class="fa-fw fas fa-heartbeat card-announcement-animation cc_pointer"></i> By 麻雀 </div>'
     show_date_time();
 }
 
