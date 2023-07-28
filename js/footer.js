@@ -1,6 +1,7 @@
 window.onload = function () {
     document.querySelectorAll('.copyright')[0].innerHTML = '<div>©2022 <i class="fa-fw fas fa-heartbeat card-announcement-animation cc_pointer"></i> By 初心 </div>'
     show_date_time();
+    console.log(document.querySelectorAll("#container"));
     setTimeout(() => {
         document.querySelectorAll(".aplayer-icon")[8].addEventListener("click", function () {
             const aplayer = document.querySelectorAll('.aplayer')[0];
