@@ -106,6 +106,12 @@ img {
     text-decoration: none;
 }
 
+.beian {
+    position: relative;
+    top: 4px;
+    text-decoration: none;
+}
+
 /* 主页所有文章页面背景 */
 #aside_content .card-widget,
 #recent-posts>.recent-post-item,
