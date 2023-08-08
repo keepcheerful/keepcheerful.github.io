@@ -20,7 +20,7 @@ window.onload = function () {
     snow();
     star();
     show_date_time();
-    document.querySelectorAll('.copyright')[0].innerHTML = '<div>©2022 <i class="fa-fw fas fa-heartbeat card-announcement-animation cc_pointer"></i> By 初心 </div>'
+    document.querySelectorAll('.copyright')[0].innerHTML = '<div>©2022 <i class="fa-fw fas fa-heartbeat card-announcement-animation cc_pointer"></i> By 初心 </div><div>豫ICP备2023017790号</div>'
 
 }
 
