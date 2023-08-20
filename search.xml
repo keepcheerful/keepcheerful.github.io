@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>面试题复习-后端常用指令集(二)</title>
+      <link href="/2023/08/18/%E9%9D%A2%E8%AF%95/%E9%9D%A2%E8%AF%95%E6%80%BB%E5%A4%8D%E4%B9%A0(%E4%BA%8C)/"/>
+      <url>/2023/08/18/%E9%9D%A2%E8%AF%95/%E9%9D%A2%E8%AF%95%E6%80%BB%E5%A4%8D%E4%B9%A0(%E4%BA%8C)/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、Maven中常用的命令集"><a href="#一、Maven中常用的命令集" class="headerlink" title="一、Maven中常用的命令集"></a>一、Maven中常用的命令集</h2><ul><li>打包package: mvn package</li><li>编译compile: mvn compile</li><li>清空clean: mvn clean</li><li>下载install: mvn install</li><li>测试test: mvn test</li></ul><h2 id="二、git中常用命令集"><a href="#二、git中常用命令集" class="headerlink" title="二、git中常用命令集"></a>二、git中常用命令集</h2><ul><li>克隆分支: git clone -b &lt;指定分支名&gt; &lt;远程仓库地址&gt;</li><li>查看分支: git branch</li><li>查看所有分支: git branch -a</li><li>切换分支: git checkout &lt;指定分支名&gt;</li><li>拉取代码: git pull</li><li>提交到缓存 <ul><li>git add . 提交新文件和修改文件 不包含删除文件</li><li>git add -u 提交被修改和删除文件 不包含新文件</li><li>git add -A 提交所有修改文件</li></ul></li><li>提交代码: git commit -m “注释”</li><li>推送代码：git push</li><li>初始化仓库: git init</li><li>添加文件到缓冲区: git add filename</li></ul><h2 id="三、Linux常用命令（老是忘记，大部分时候是看笔记操作）"><a href="#三、Linux常用命令（老是忘记，大部分时候是看笔记操作）" class="headerlink" title="三、Linux常用命令（老是忘记，大部分时候是看笔记操作）"></a>三、Linux常用命令（老是忘记，大部分时候是看笔记操作）</h2><ul><li>目录操作<br>  cd,pwd,ls,mkdir,rmdir,du<br>  <img src="https://cdn.jsdelivr.net/gh/keependeavour/picgo/img/e90cd23fb124c02808bf40770dfdb08.png" alt="目录命令图"></li><li>文件操作<br>  which、touch、cp、mv、rm、file<br>  <img src="https://cdn.jsdelivr.net/gh/keependeavour/picgo/img/47af5242cfd2a118d5e809495f82edf.png" alt="文件命令图"></li><li>系统管理<br>  shutdown、reboot、lscpu<br>  <img src="https://cdn.jsdelivr.net/gh/keependeavour/picgo/img/aaccacb20c27eb61aa27f72a6409ade.png" alt="文件命令图"></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 面试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>面试题复习-java线程(一)</title>
       <link href="/2023/08/17/%E9%9D%A2%E8%AF%95/%E9%9D%A2%E8%AF%95%E6%80%BB%E5%A4%8D%E4%B9%A0(%E4%B8%80)/"/>
       <url>/2023/08/17/%E9%9D%A2%E8%AF%95/%E9%9D%A2%E8%AF%95%E6%80%BB%E5%A4%8D%E4%B9%A0(%E4%B8%80)/</url>
