@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>OJ判题项目-初始化(二)</title>
+      <link href="/2023/09/10/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/oj%E5%88%A4%E9%A2%98/oj%E5%88%A4%E9%A2%98%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91-2/"/>
+      <url>/2023/09/10/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/oj%E5%88%A4%E9%A2%98/oj%E5%88%A4%E9%A2%98%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91-2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="后端项目初始化"><a href="#后端项目初始化" class="headerlink" title="后端项目初始化"></a>后端项目初始化</h2><ul><li><p>克隆代码仓库中的后端模板</p></li><li><p>修改项目的名称、包名等一些文件命名</p></li><li><p>修改项目的 yml 文件，端口号，数据库链接 url、username、password 等</p></li><li><p>修改完成后的项目结构如下</p><p><img src="https://cdn.jsdelivr.net/gh/keependeavour/picgo/img/20230911151019.png" alt=""></p></li><li><p>修改完配置项后，启动项目并进入后端的接口文档如下</p></li></ul><p><img src="https://cdn.jsdelivr.net/gh/keependeavour/picgo/img/20230911151321.png" alt=""></p><h2 id="前端项目初始化"><a href="#前端项目初始化" class="headerlink" title="前端项目初始化"></a>前端项目初始化</h2><ul><li>安装 vue-cli 脚手架<br>执行命令<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue create chenoj-frontend</span><br></pre></td></tr></table></figure></li><li>项目创建完成后，进入项目安装 arco design 组件库<br>执行命令<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save-dev @arco-design/web-vue</span><br></pre></td></tr></table></figure></li><li><p>安装完成后 配置 main.js</p><figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; createApp &#125; <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&quot;./App.vue&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">ArcoVue</span> <span class="keyword">from</span> <span class="string">&quot;@arco-design/web-vue&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;@arco-design/web-vue/dist/arco.css&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> router <span class="keyword">from</span> <span class="string">&quot;./router&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> store <span class="keyword">from</span> <span class="string">&quot;./store&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;@/access&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">createApp</span>(<span class="title class_">App</span>).<span class="title function_">use</span>(<span class="title class_">ArcoVue</span>).<span class="title function_">use</span>(store).<span class="title function_">use</span>(router).<span class="title function_">mount</span>(<span class="string">&quot;#app&quot;</span>);</span><br></pre></td></tr></table></figure></li><li><p>编写路由控制，权限控制，基本的登录页注册页<br><img src="https://cdn.jsdelivr.net/gh/keependeavour/picgo/img/20230911152012.png" alt=""></p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目经验 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OJ判题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OJ判题项目-介绍(一)</title>
+      <link href="/2023/09/09/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/oj%E5%88%A4%E9%A2%98/oj%E5%88%A4%E9%A2%98%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91-1/"/>
+      <url>/2023/09/09/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/oj%E5%88%A4%E9%A2%98/oj%E5%88%A4%E9%A2%98%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91-1/</url>
+      
+        <content type="html"><![CDATA[<h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><ul><li>OJ = Online judge 在线判题测评系统</li><li>用户可以选择题目，在线做题，编写代码并提交代码</li><li>系统会对用户提交的代码，根据系统设定的答案，来判断用户的提交结果是否正确</li><li>OJ 判题系统的最大难点在于如何判题，也就是如何设计判题系统，并在开发结束后提供开发 API</li><li>此次的代码沙箱通过自己来实现</li></ul><h2 id="项目特点"><a href="#项目特点" class="headerlink" title="项目特点"></a>项目特点</h2><blockquote><p>目前网上并无此类型项目的教程，即使有也不是从 0-&gt;1 的完成进度，对于此次项目能够应用到 Spring Cloud，Docker 代码沙箱，虚拟机等这些。<br>此次系统会将前后端的大部分技术栈都应用到项目之中，并进行前端从 0-&gt;1 的搭建，后端依旧使用万能模板进行初始化，必要的一些增啥改查（用户） 完成 session 域登录。</p></blockquote><h2 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h2><ul><li><h3 id="后端技术"><a href="#后端技术" class="headerlink" title="后端技术"></a>后端技术</h3><blockquote><ul><li>Spring Boot</li><li>AOP 切面编程</li><li>Spring Cloud 微服务</li><li>Docker 代码沙箱</li><li>JVM 部分涉及</li><li>Rabbitmq 消息队列</li><li>mybatis-plus 持久层</li><li>mysql 数据库</li><li>设计模式</li></ul></blockquote></li><li><h3 id="前端技术"><a href="#前端技术" class="headerlink" title="前端技术"></a>前端技术</h3><blockquote><ul><li>Vue3</li><li>Arco Design 组件库</li><li>axios 请求库</li><li>openAPI 第三方生成接口</li><li>typescript</li></ul></blockquote></li><li><h3 id="功能模块"><a href="#功能模块" class="headerlink" title="功能模块"></a>功能模块</h3></li></ul><ol><li>题目模块<blockquote><p>a. 创建题目（admin）<br>b. 删除题目（admin）<br>c. 修改题目（admin）<br>d. 搜索题目（用户）<br>e. 在线做题（用户）<br>f. 提交题目代码（用户）</p></blockquote></li><li>用户模块<blockquote><p>a.注册<br>b.登录</p></blockquote></li><li>判题模块<blockquote><p>a.提交判题（结果判断是否正确和错误）<br>b.错误处理（内存溢出、安全性、超时）<br>b.自主实现代码沙箱（安全沙箱，运行用户代码）<br>b.开放接口（提供独立的新服务）</p></blockquote></li></ol><h2 id="从项目中学习到的实践知识"><a href="#从项目中学习到的实践知识" class="headerlink" title="从项目中学习到的实践知识"></a>从项目中学习到的实践知识</h2><blockquote><ol><li>此次依旧是跟随鱼皮大大全程直播听讲，参与项目完整的开发流程，能够独立开发上线项目。</li><li>在上一个项目中已经初使用 rabbitmq 到项目中，此项目会再次使用，熟悉 rabbitmq 的使用。</li><li>初次学习 java 进程控制、java 安全管理器、部分 JVM 知识点、虚拟机（云服务器）、Docker(代码沙箱) Spring Cloud 微服务、设计模式</li><li>本项目的选材新颖，打破网上统一的项目经验如外卖系统，别人做外卖，我做 OJ。</li><li>此项目还能够将所学的前后端知识进行一个综合应用，也是对技术学习掌握的如何的考验。</li><li>最主要的难点就是自主实现代码沙箱，目前我对于这个还是一个模糊的状态，希望通过本项目的学习能够一定的了解并使用 Docker 代码沙箱</li></ol></blockquote><h2 id="个人对项目见解"><a href="#个人对项目见解" class="headerlink" title="个人对项目见解"></a>个人对项目见解</h2><blockquote><p>第一次学习关于 java 项目的安全性问题，比如内存溢出，运行用户代码等等。最主要是针对于用户的代码，要在一个安全纯净的环境进行执行，还要过滤恶意代码防止攻击系统，造成系统瘫痪，将判题运行用户代码的操作进行解耦，收到用户代码时候，将代码放到安全沙箱中进行执行，最后让沙箱返回用户代码的执行结果，后端系统只需要将代码给沙箱，沙箱运行并返回结果，系统进行判断结果符合为正确即可，隔离了代码的执行环境，如果代码存在木马或者是恶意代码，在沙箱中执行，并不会影响到系统的运行。这样保证了系统的安全性，也对应用服务进行了解耦，增大了接口的响应效率，前端提交代码后，看到的是任务的执行状态，稍等后，后端修改任务状态正确就返回 succeed 错误就返回其他在沙箱中运行错误，或者是结果不符合错误。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 项目经验 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OJ判题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>智能BI项目-引入RabbitMQ(七)</title>
       <link href="/2023/08/28/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/%E6%99%BA%E8%83%BDBI/%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91-7/"/>
       <url>/2023/08/28/%E9%A1%B9%E7%9B%AE%E7%BB%8F%E9%AA%8C/%E6%99%BA%E8%83%BDBI/%E6%99%BA%E8%83%BDBI%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91-7/</url>
